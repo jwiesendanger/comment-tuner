@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/rewrite.js": {
+      "maxDuration": 30
+    }
+  }
+}

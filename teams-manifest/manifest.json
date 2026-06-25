@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.0",
+  "id": "com.commenttuner.internal",
+  "packageName": "com.commenttuner",
+  "developer": {
+    "name": "Internal",
+    "websiteUrl": "https://YOUR-APP.vercel.app",
+    "privacyUrl": "https://YOUR-APP.vercel.app",
+    "termsOfUseUrl": "https://YOUR-APP.vercel.app"
+  },
+  "name": {
+    "short": "Comment Tuner",
+    "full": "Comment Tuner — Tone Rewriter"
+  },
+  "description": {
+    "short": "Rewrite text with adjustable tone dials.",
+    "full": "Paste any comment, email, or note and use sliders to control tone — conciseness, warmth, formality, and more — then get an AI rewrite instantly."
+  },
+  "icons": {
+    "color": "icon-color.png",
+    "outline": "icon-outline.png"
+  },
+  "accentColor": "#5b5bd6",
+  "staticTabs": [
+    {
+      "entityId": "commenttuner-main",
+      "name": "Comment Tuner",
+      "contentUrl": "https://YOUR-APP.vercel.app",
+      "websiteUrl": "https://YOUR-APP.vercel.app",
+      "scopes": ["personal"]
+    }
+  ],
+  "permissions": ["identity"],
+  "validDomains": [
+    "YOUR-APP.vercel.app"
+  ]
+}
