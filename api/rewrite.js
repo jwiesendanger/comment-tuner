@@ -27,8 +27,8 @@ export default async function handler(req, res) {
     })
   }
 
-  const resolvedBase = baseURL || process.env.BASE_URL || 'https://api.openai.com/v1'
-  const resolvedModel = model || process.env.MODEL || 'gpt-4o-mini'
+  const resolvedBase = process.env.BASE_URL || baseURL || 'https://api.openai.com/v1'
+  const resolvedModel = process.env.MODEL || model || 'gpt-4o-mini'
   const endpoint = `${resolvedBase.replace(/\/$/, '')}/chat/completions`
 
   let response
